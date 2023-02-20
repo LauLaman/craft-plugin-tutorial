@@ -1,0 +1,48 @@
+{
+    "name": "laurens-laman/craft-laulaman-test",
+    "type": "craft-plugin",
+    "license": "mit",
+    "support": {
+        "email": "do.not@mail.me",
+        "issues": "https://github.com/laulaman/craft-plugin-tutorial/issues?state=open",
+        "source": "https://github.com/laulaman/craft-plugin-tutorial",
+        "docs": "https://github.com/laulaman/craft-plugin-tutorial",
+        "rss": "https://github.com/laulaman/craft-plugin-tutorial/releases.atom"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.3.10"
+    },
+    "require-dev": {
+        "craftcms/ecs": "dev-main",
+        "craftcms/phpstan": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "laurenslaman\\craftlaulamantest\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "laulaman-test",
+        "name": "laulaman-test",
+        "developer": "Laurens Laman",
+        "documentationUrl": "https://github.com/laulaman/craft-plugin-tutorial",
+        "class": "laurenslaman\\craftlaulamantest\\LauLamanTest"
+    },
+    "scripts": {
+        "check-cs": "ecs check --ansi",
+        "fix-cs": "ecs check --ansi --fix",
+        "phpstan": "phpstan --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
